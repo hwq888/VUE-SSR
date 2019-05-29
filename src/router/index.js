@@ -8,6 +8,7 @@ import third from '@/components/third'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     { path: '/',
       redirect: '/first'
