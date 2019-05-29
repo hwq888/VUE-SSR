@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import MetaInfo from 'vue-meta-info'
 
 Vue.config.productionTip = false
-
+Vue.use(MetaInfo)
 /* eslint-disable no-new */
 // new Vue({
 //   el: '#app',

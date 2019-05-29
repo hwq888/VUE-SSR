@@ -8,8 +8,10 @@
 </template>
 
 <script>
+import VueMetaInfo from '../assets/vue-meta-info.js'
 export default {
-  name: 'HelloWorld',
+  name: 'second',
+  metaInfo: VueMetaInfo.second,
   data () {
     return {
       msg1: 'Welcome to first',

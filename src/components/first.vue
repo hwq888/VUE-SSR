@@ -1,15 +1,17 @@
 <template>
   <div class="hello">
     <h1>first</h1>
-    <h1><router-link :to="{ path:'first'}">{{ msg1 }}</router-link></h1>
-    <h1><router-link :to="{ path:'second'}">{{ msg2 }}</router-link></h1>
-    <h1><router-link :to="{ path:'third'}">{{ msg3 }}</router-link></h1>
+    <h1><router-link to="first">{{ msg1 }}</router-link></h1>
+    <h1><router-link to="second">{{ msg2 }}</router-link></h1>
+    <h1><router-link to="third">{{ msg3 }}</router-link></h1>
   </div>
 </template>
 
 <script>
+import VueMetaInfo from '../assets/vue-meta-info.js'
 export default {
   name: 'HelloWorld',
+  metaInfo: VueMetaInfo.first,
   data () {
     return {
       msg1: 'Welcome to first',

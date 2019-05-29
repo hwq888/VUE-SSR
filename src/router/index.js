@@ -11,7 +11,8 @@ export default new Router({
   mode: 'history',
   routes: [
     { path: '/',
-      redirect: '/first'
+      name: 'first',
+      component: first
     },
     {
       path: '/first',
