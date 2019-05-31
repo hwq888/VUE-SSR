@@ -134,7 +134,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       // indexPath: path.join(__dirname, '../dist', 'index.html'),
 
       // 对应自己的路由文件，比如a有参数，就需要写成 /a/param1。
-      routes: ['/', '/first', '/second', '/third'],
+      routes: ['/', '/first', '/second', '/third', '/fourth', '/userCenter/userFirst','/userCenter/userSecond','/userCenter/userThird'],
 
       // 预渲染代理接口
       // server: {

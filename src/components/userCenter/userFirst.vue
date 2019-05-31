@@ -1,15 +1,11 @@
 <template>
   <div class="hello">
-    <h1>third</h1>
-    <h2 @click="linkRouter('/first')">{{ msg1 }}</h2>
-    <h2 @click="linkRouter('/second')">{{ msg2 }}</h2>
-    <h2 @click="linkRouter('/third')">{{ msg3 }}</h2>
-    <h2 @click="linkRouter('/fourth')">{{ msg4 }}</h2>
+    <h1>first</h1>
   </div>
 </template>
 
 <script>
-import VueMetaInfo from '../assets/vue-meta-info.js'
+import VueMetaInfo from '@/assets/vue-meta-info.js'
 export default {
   name: 'HelloWorld',
   metaInfo: VueMetaInfo.first,
@@ -17,12 +13,17 @@ export default {
     return {
       msg1: 'Welcome to first',
       msg2: 'Welcome to second',
-      msg3: 'Welcome to third'
+      msg3: 'Welcome to third',
+      msg4: 'URL参数传递',
+      msg5: '嵌套路由'
     }
   },
   methods: {
     linkRouter (path) {
       this.$router.push({path: path})
+    },
+    linkFourth (path, id) {
+      this.$router.push({path: path, query: {id}})
     }
   }
 }

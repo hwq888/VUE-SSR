@@ -1,10 +1,8 @@
 <template>
   <div class="hello">
-    <h1>third</h1>
+    <h1>fourth</h1>
     <h2 @click="linkRouter('/first')">{{ msg1 }}</h2>
-    <h2 @click="linkRouter('/second')">{{ msg2 }}</h2>
-    <h2 @click="linkRouter('/third')">{{ msg3 }}</h2>
-    <h2 @click="linkRouter('/fourth')">{{ msg4 }}</h2>
+    <h2>参数：{{ $route.query.id}}</h2>
   </div>
 </template>
 
